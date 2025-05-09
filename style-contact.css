@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.gif') no-repeat center center/cover;
+    background-size: cover;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    background: rgba(17, 27, 83, 0.945);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #f39c12;
+}
+
+#contact {
+    color: #f39c12;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 100px;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7); /* Adding shadow border */
+    width: 90%;
+    max-width: 800px;
+}
+
+#reach-me {
+    color: #f39c12;
+    font-size: 22px;
+    text-shadow: 0px 0px 4px #f39c12;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#list li {
+    font-size: 22px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#list li i {
+    margin-right: 15px;
+    font-size: 30px;
+    color: #f39c12;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#list li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 22px;
+    transition: color 0.3s ease;
+}
+
+#list li:hover {
+    transform: translateY(-5px);
+    color: #e67e22; /* Hover color */
+}
+
+#list li:hover i {
+    transform: scale(1.1);
+    color: #e67e22; /* Hover icon color */
+}
+
+#list li:hover a {
+    color: #e67e22; /* Hover link color */
+}
+
+@media (max-width: 768px) {
+    #contact {
+        font-size: 32px;
+        padding: 30px;
+    }
+
+    #reach-me {
+        font-size: 20px;
+    }
+
+    #list li {
+        font-size: 18px;
+    }
+
+    #list li i {
+        font-size: 26px;
+    }
+}

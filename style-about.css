@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.gif') no-repeat center center/cover;
+    background-size: cover;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    background: rgba(17, 27, 83, 0.945);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #f39c12;
+}
+
+#about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(17, 27, 83, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Stronger, deeper shadow */
+    margin-bottom: 30px;
+    max-width: 1100px; /* Ensure content doesn't stretch too far */
+    width: 90%;
+    margin-top: 120px; /* To add some space from the fixed header */
+}
+
+.text-content {
+    max-width: 700px;
+    text-align: left;
+}
+
+#name {
+    color: #f39c12;
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#course {
+    color: #f39c12;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+#about-me {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.btn-resume {
+    padding: 12px 25px;
+    background-color: #f39c12;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-resume:hover {
+    background-color: #e67e22;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    #about-section {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    #name {
+        font-size: 28px;
+    }
+
+    #course {
+        font-size: 20px;
+    }
+
+    #about-me {
+        font-size: 16px;
+    }
+
+    .btn-resume {
+        padding: 10px 20px;
+    }
+}
